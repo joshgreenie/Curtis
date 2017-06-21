@@ -3423,6 +3423,20 @@ div#topBar > .container > div:last-child {
   -ms-flex-align: center;
   align-items: center; }
 
+ul.sub-menu li ul.sub-menu {
+  position: static;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  opacity: 1; }
+  ul.sub-menu li ul.sub-menu li:hover a:after {
+    border-bottom: 1px solid #588CA5; }
+  ul.sub-menu li ul.sub-menu li a {
+    font-size: .8rem;
+    padding: 3px 6px 3px 16px; }
+    ul.sub-menu li ul.sub-menu li a:after {
+      border-bottom: 1px solid transparent; }
+
 /*--------------------------------------------------------------
   ## footer
   --------------------------------------------------------------*/
@@ -5719,10 +5733,60 @@ Dont show over 980px - Menu Styles here
     height: auto; }
   .footer-image:after {
     background-position: 50% -100px;
-    background-size: 550%; } }
+    background-size: 550%; }
+  .hero-wrapper .owl-dots {
+    right: calc(50% - 195px); } }
 
 @media (max-width: 500px) {
   .container {
-    max-width: 280px; } }
+    max-width: 280px; }
+  .hero-wrapper .owl-dots {
+    right: calc(50% - 195px); }
+  body.mean-container a.meanmenu-reveal {
+    right: 10px !important;
+    top: 12px !important; }
+  body.mean-container .mean-nav {
+    margin-top: 72px; }
+  body.mean-container .mean-nav ul li a.mean-expand {
+    height: 18px;
+    line-height: 1; }
+  .full-width-tabs-wrapper .tab h2 {
+    font-size: 1.4rem; }
+  .full-width-tabs-wrapper .full-width-content-tabs .tab {
+    min-width: 80px; }
+  .full-width-tabs-wrapper .full-width-content-tabs .tab3 {
+    right: calc(50% - 125px); }
+  .full-width-tabs-wrapper .tab1 {
+    left: calc(50% - 125px); }
+  .hero-wrapper .owl-dots {
+    right: calc(50% - 0px); }
+  .hero-wrapper .owl-carousel .owl-dots .owl-dot {
+    top: -86px; }
+  .hero-wrapper .slide-image .slide-content {
+    background-size: 120% !important;
+    background-position: 150% 100%; }
+  .hero-wrapper .slide-image .slide-content.align-right h1.slide-header {
+    margin: 0;
+    padding-right: 20px;
+    font-size: 2.8rem; }
+  .hero-wrapper .slide-image .slide-content.align-right h3 {
+    max-width: 120%;
+    width: 100% !important; }
+  .hero-wrapper .slide-image .slide-content.align-right h2.fancy-header {
+    padding-right: 30px;
+    font-size: 4rem; }
+  .body-slider .owl-nav {
+    top: auto; }
+  .slider-wrapper.body-slider .owl-carousel {
+    padding: 0; }
+  .slider-wrapper .owl-carousel .owl-dots .owl-dot {
+    top: -23px; }
+  .button-wrapper a.btn-secondary:after {
+    line-height: 200%; }
+  .footer-image:after {
+    background-size: cover;
+    background-position: center; }
+  .footer-image {
+    padding-top: 50%; } }
 
 /*# sourceMappingURL=style.css.map */
