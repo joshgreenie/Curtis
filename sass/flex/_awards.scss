@@ -1,0 +1,13 @@
+.awards {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row nowrap;
+  .award-image-wrapper {
+    margin-right: 4.6875rem;
+    margin-bottom: 2.5rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

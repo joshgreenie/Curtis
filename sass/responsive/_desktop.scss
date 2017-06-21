@@ -1,0 +1,36 @@
+.main-navigation li {
+  margin-right: 10px;
+}
+
+#masthead.site-header:after {
+  top: calc(100% - 15px);
+}
+
+.full-width-tabs-wrapper .tab1 {
+  left: calc(50% - 475px);
+  min-width: 300px;
+}
+
+.full-width-tabs-wrapper .tab3 {
+  right: calc(50% - 475px);
+  min-width: 300px;
+}
+
+.full-width-tabs-wrapper .tab2 {
+  min-width: 300px;
+}
+
+
+.full-width-tabs-wrapper .tab .btn-wrapper {
+  width: 100% !important;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.full-width-tabs-wrapper .tab:hover .tab-text {
+  top: 20%;
+}
+
+.hero-wrapper .owl-dots {
+  right: calc(50% - 500px);
+}

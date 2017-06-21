@@ -1,0 +1,91 @@
+.top-header {
+  display: none;
+}
+
+.site-branding {
+  width: 360px;
+}
+
+
+body.mean-container {
+  .mean-nav {
+    margin-top: 110px;
+    position: absolute;
+    background-color: white;
+    color: #333;
+  }
+  div.mean-bar {
+    min-height: 0;
+    padding: 0;
+    position: absolute;
+  }
+  .mean-nav ul li {
+    a {
+      color: rgb(88, 140, 165);
+      border-top: 1px solid rgba(88, 140, 165, 0.5);
+      &.mean-expand {
+        border-left: 1px solid rgba(88, 140, 165, 0.4) !important;
+        border-bottom: 1px solid rgba(88, 140, 165, 0.2) !important;
+        transition: all .35s ease;
+        &:hover {
+          background: rgb(88, 140, 165);
+          color: #fff;
+        }
+      }
+    }
+    li a {
+      padding: .5em 10%;
+      border-top: 1px solid rgba(88, 140, 165, .5);
+      opacity: 0.75;
+    }
+  }
+  a.meanmenu-reveal {
+    color: #588ca5;
+    right: calc(50% - 365px) !important;
+    top: 30px;
+    span {
+      background: #588ca5;
+    }
+  }
+}
+
+#masthead.site-header:after {
+  top: calc(100% - 0px);
+}
+
+ul#primary-menu li {
+  padding: 0;
+}
+
+
+.full-width-tabs-wrapper .tab1 {
+  min-width: 220px;
+  left: calc(50% - 345px);
+}
+
+.full-width-tabs-wrapper .tab2 {
+  min-width: 220px;
+}
+
+.full-width-tabs-wrapper .tab3 {
+  min-width: 220px;
+  right: calc(50% - 345px);
+}
+
+.full-width-tabs-wrapper .tab .tab-text {
+  line-height: 1;
+}
+
+.full-width-tabs-wrapper .tab:hover, .full-width-tabs-wrapper .tab:focus {
+  padding-top: 25%;
+}
+
+.footer-image {
+  margin-top: -20%;
+  padding-top: 20%;
+}
+
+.hero-wrapper .owl-dots {
+  right: calc(50% - 300px);
+}
+

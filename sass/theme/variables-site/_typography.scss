@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Hiatus";
+  src: url("fonts/Hiatus.eot?") format("eot"),
+  url("fonts/Hiatus.otf?") format("otf"),
+  url("fonts/Hiatus.woff") format("woff"),
+  url("fonts/Hiatus.ttf") format("truetype");
+}
+
+
+$font__main: "Poppins", sans-serif;
+$font__header: "Hiatus", "Poppins", sans-serif;
+$font__code: "Open Sans", sans-serif;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+
+body p {
+  font-size: 1.2rem;
+}
+
+h3 {
+  color: $main__bg_color;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  clear: none;
+}

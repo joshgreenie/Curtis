@@ -1,0 +1,88 @@
+.body-slider {
+  padding: 4.5rem 0 2.5rem 0;
+  .owl-stage-outer {
+    color: #fff;
+    position: relative;
+    h2 {
+      font-family: $font__main;
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0;
+      text-align: center;
+    }
+    .owl-stage {
+      .owl-item {
+        .item {
+          max-width: 60rem;
+          margin: 0 auto;
+          position: relative;
+          h2 {
+            &:before {
+              content: '\e903';
+              font-size: 60px;
+              position: absolute;
+              top: 20px;
+              left: 0;
+              opacity: .21;
+              font-family: "curtis";
+
+            }
+            &:after {
+              content: '\e902';
+              font-size: 60px;
+              position: absolute;
+              top: 20px;
+              right: 0;
+              opacity: .21;
+              font-family: "curtis";
+
+            }
+          }
+        }
+      }
+    }
+  }
+  /* style for slider */
+  .owl-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    transform: translateY(-185%);
+    .owl-prev, .owl-next {
+      font-size: 3.75rem;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  .owl-dot {
+    display: inline-block;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #d6d6d6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    -webkit-transition: opacity 200ms ease;
+    -moz-transition: opacity 200ms ease;
+    -ms-transition: opacity 200ms ease;
+    -o-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+  }
+
+  .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+    background: #4d90e2;
+  }
+
+}

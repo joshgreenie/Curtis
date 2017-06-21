@@ -1,0 +1,245 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote, q {
+  quotes: "" "";
+
+  &:before,
+  &:after {
+    content: "";
+  }
+}
+
+hr {
+  background-color: $color__background-hr;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+@import "lists";
+
+img {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
+}
+
+@import "tables";
+
+p {
+  @include font-size(1);
+}
+
+@font-face {
+  font-family: 'curtis';
+  src: url('fonts/curtis.eot?6vzhkf');
+  src: url('fonts/curtis.eot?6vzhkf#iefix') format('embedded-opentype'),
+  url('fonts/curtis.ttf?6vzhkf') format('truetype'),
+  url('fonts/curtis.woff?6vzhkf') format('woff'),
+  url('fonts/curtis.svg?6vzhkf#curtis') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'curtis' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-right_quotes:before {
+  content: "\e902";
+}
+
+.icon-left_quotes:before {
+  content: "\e903";
+}
+
+.icon-left_arrow:before {
+  content: "\e900";
+}
+
+.icon-right_arrow:before {
+  content: "\e901";
+}
+
+.button-wrapper {
+  text-align: center;
+  a {
+    margin-top: 1.875rem;
+    border-radius: 50%;
+
+    position: relative;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0 2.25rem;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    &.btn-primary {
+      border: 1px solid #fff;
+    }
+
+    &.btn-tertiary {
+      border: 1px solid #ffffff;
+      margin: 0 10px 0 0;
+      padding: 0.35rem 3.25rem 0.35rem 2rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+
+      @include transition(all .35s ease);
+      &:hover {
+        color: $main__bg_color;
+        background: #fff;
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+      }
+      &:after {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 28px;
+        font-size: 100%;
+        right: 15px;
+      }
+    }
+    &.btn-secondary {
+      background: $main__bg_color;
+      margin: 0;
+      padding: 1.8rem 6.25rem 1.8rem 2rem;
+      font-size: 1.8rem;
+      font-weight: 300;
+
+      &:hover {
+        color: #fff;
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+      }
+      &:after {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 74px;
+        font-size: 170%;
+        right: 35px;
+      }
+    }
+    &:after {
+      content: '\e901';
+      position: absolute;
+      font-family: "curtis";
+      top: .2rem;
+      right: .5rem;
+      font-size: 1.25rem;
+
+    }
+    &:hover {
+      -webkit-animation-name: pulse;
+      animation-name: pulse;
+    }
+  }
+}
+
+h1.content-title, h1 {
+  color: $main__bg_color;
+  font-weight: 600;
+}
+
+.half {
+  width: 50%;
+  float: left;
+}
+
+.thirds {
+  width: 33%;
+  float: left;
+}
+
+h4 {
+  clear: none;
+  //display: inline-block;
+  margin: 0;
+  color: $main__bg_color;
+  font-weight: normal;
+  font-size: 1.2rem;
+  a {
+    color: #404040;
+    text-decoration: none;
+  }
+}
+
+#gform_wrapper_1 {
+  .gform_body {
+    input, textarea {
+      border-radius: 0;
+      margin: 0 !important;
+      font-size: 1.2rem !important;
+      padding: 6px 15px 4px !important;
+      line-height: 1 !important;
+      color: $main__bg_color;
+      border-color: #a5a5a5;
+    }
+    ul.gform_fields li.gfield {
+      padding-right: 45px;
+    }
+    li {
+      margin-bottom: 0 !important;
+    }
+    textarea {
+      padding-top: 10px !important;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $main__bg_color;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: $main__bg_color;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: $main__bg_color;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: $main__bg_color;
+    }
+  }
+  .gform_footer.top_label {
+    margin: 0;
+    padding: 7px 0 0;
+    input.gform_button {
+      box-shadow: none;
+      background: #fff;
+      border-radius: 0;
+      font-size: 1.2rem !important;
+      color: $main__bg_color;
+      border-color: #a5a5a5;
+    }
+  }
+}
+.hidden {
+  display: none !important;
+}

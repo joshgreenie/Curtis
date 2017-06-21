@@ -1,0 +1,35 @@
+.fifty-fifty-wrapper {
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-flow: column wrap;
+  .fifty-fifty {
+    color: #fff;
+    width: 50%;
+    position: relative;
+    background: rgba(88, 140, 165, .89);
+    padding: 4%;
+    .full-width-wysiwyg {
+
+    }
+  }
+  }
+  .wave {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      height: auto;
+      width: 100%;
+      background-image: url("/wp-content/themes/firetoss_seed-curtis/img/shelf_wave.svg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: 0;
+      bottom: 0;
+      padding-top: 28%;
+      z-index: 1;
+    }
+  }
+}

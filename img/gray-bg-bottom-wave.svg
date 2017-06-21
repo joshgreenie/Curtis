@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1611.4 147.5" style="enable-background:new 0 0 1611.4 147.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{opacity:0.9;fill:#1B98BA;enable-background:new    ;}
+	.st2{fill:#58595B;}
+	.st3{fill:#603913;}
+</style>
+<title>gray-bg-bottom-wave</title>
+<g id="Layer_2">
+	<g id="Layer_1-2">
+		<g>
+			<g>
+				<defs>
+					<rect id="SVGID_1_" x="-25.9" y="-1.6" width="1645.4" height="159.3"/>
+				</defs>
+				<clipPath id="SVGID_2_">
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+				</clipPath>
+				<g class="st0">
+					<path class="st1" d="M0,96.2c0,0,803.6-141.1,1611.4,26.7l0.2-248.7l-1611-0.5L0,96.2z"/>
+					<path class="st2" d="M0,95.9c0,0,801.4-160.6,1611.7-0.3v-686.4L0.5-590.5L0,95.9z"/>
+					<path class="st3" d="M0,96.2c0,0,797.5-140.8,1611.4,25.4v25.8C1611.4,147.5,924.1-26.2,0,96.2z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

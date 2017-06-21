@@ -1,0 +1,43 @@
+.site-branding {
+  width: 200px;
+}
+
+nav#site-navigation {
+  width: calc(100% - 200px);
+}
+
+ul#primary-menu li {
+  margin: 0;
+  padding: 20px 0;
+}
+
+
+ul.sub-menu {
+  width: 230px;
+  top: calc(100% - 22px) !important;
+}
+
+#masthead.site-header:after {/* top: calc(100% - 3px); */}
+
+.hero-wrapper .owl-dots {
+  right: calc(50% - 400px);
+}
+
+.full-width-tabs-wrapper .tab:hover, .full-width-tabs-wrapper .tab:active {
+  padding-top: 20%;
+}
+
+.slider-wrapper.body-slider .owl-carousel {
+  /* max-width: calc(100% - 250px); */
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.body-slider .owl-nav {
+  margin: 0 -80px;
+}
+
+.footer-image {
+  margin-top: -15%;
+  padding-top: 15%;
+}

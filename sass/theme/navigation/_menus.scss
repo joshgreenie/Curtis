@@ -1,0 +1,152 @@
+.site-branding {
+	width: 241px;
+	float: left;
+}
+
+.main-navigation {
+	display: block;
+	float: left;
+	width: calc(100% - 300px);
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 1.5em;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		float: left;
+		position: relative;
+		margin-right: 1.5625rem;
+
+		&last-child {
+			margin-right: 0;
+		}
+		a {
+			position: relative;
+		}
+		a:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left:0;
+			width: 100%;
+			border-bottom: 2px solid transparent;
+			@include transition(all .35s ease);
+		}
+		&:hover > a:after,
+		&.focus > a:after {
+			border-bottom: 2px solid $main__bg_color;
+			//margin-bottom: .3125rem;
+
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: $secondary_color;
+		font-family: $font__main;
+		font-size: .875rem;
+		font-weight: 400;
+		padding: 10px 6px;
+
+		&:hover {
+			cursor: pointer;
+			cursor: hand;
+		}
+	}
+
+	> a {
+		position: relative;
+	}
+	> a:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left:0;
+		width: 100%;
+		border-bottom: 2px solid transparent;
+		@include transition(all .35s ease);
+	}
+	.current_page_item > a:after,
+	.current-menu-item > a:after,
+	.current_page_ancestor > a:after,
+	.current-menu-ancestor > a:after {
+		border-bottom: 2px solid $main__bg_color;
+		//margin-bottom: .3125rem;
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

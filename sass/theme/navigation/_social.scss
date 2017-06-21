@@ -1,0 +1,59 @@
+
+.social-media {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  ul {
+    margin: -40px 0 40px 0;
+    padding: 0 !important;
+
+    li {
+      a {
+        text-decoration: none;
+        span {
+          color: $main__bg_color;
+          background: #fff;
+          margin: 0 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 3.25rem;
+          border-radius: 10px;
+          -webkit-transition: all .35s ease;
+          -moz-transition: all .35s ease;
+          -ms-transition: all .35s ease;
+          -o-transition: all .35s ease;
+          transition: all .35s ease;
+          &:hover {
+            cursor: pointer;
+            cursor: hand;
+          }
+          /*
+         Facebook #3B5998
+         Flickr #FE0883
+         Foursquare #8FD400
+         Google+ #C63D2D
+         Instagram #4E433C
+         Linkedin #4875B4
+         Tumblr #2B4964
+         Twitter #33CCFF
+         Vimeo #86B32D
+         Youtube #FF3333
+         */
+          &.fa-facebook-square:hover {
+            color: #3B5998;
+
+
+          }
+          &.fa-youtube-square:hover {
+            color: #FF3333;
+          }
+          &.fa-instagram:hover {
+            color: #4E433C;
+          }
+
+        }
+      }
+    }
+  }
+}
